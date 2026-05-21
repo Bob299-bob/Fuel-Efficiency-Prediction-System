@@ -1,7 +1,7 @@
 import streamlit as st
 import tensorflow as tf
 import joblib
-model=tf.keras.models.load_model('fuel_efficiency.keras')
+model=tf.keras.models.load_model('fuel_efficiency.h5')
 scaler=joblib.load('scaler.pkl')
 if "page" not in st.session_state:
     st.session_state.page = "Home"
